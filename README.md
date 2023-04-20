@@ -1,0 +1,2 @@
+# strateqgroup
+# strateqgroup
