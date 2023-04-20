@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html>  
+
+<head>  
+        <title> Jquery example to get number of days between two dates </title>  
+</head>  
+
+<body>  
+    <script type="text/javascript">     
+        var days = daysdifference('03/19/2021', '03/31/2021');
+        // Add two dates to two variables    
+        console.log(days);
+        function daysdifference(firstDate, secondDate) {
+            var startDay = new Date(firstDate);
+            var endDay = new Date(secondDate);
+            // Determine the time difference between two dates     
+            var millisBetween = startDay.getTime() - endDay.getTime();
+            // Determine the number of days between two dates  
+            var days = millisBetween / (1000 * 3600 * 24);
+            // Show the final number of days between dates     
+            return Math.round(Math.abs(days));
+        }  
+    </script>  
+</body>  
+
+</html>
